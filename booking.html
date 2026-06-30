@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking | Sabirin Abdirizak</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sabirin Abdirizak</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html" class="active">Booking</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="booking">
+            <h2>Guest Booking</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="req">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Sabirin Abdirizak" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="major">Major <span class="req">*</span></label>
+                        <select id="major" name="major" required>
+                            <option value="">Select your major</option>
+                            <option value="cs">Computer Science</option>
+                            <option value="it">Information Technology</option>
+                            <option value="ds">Data Science</option>
+                            <option value="design">Design</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="label">Gender <span class="req">*</span></span>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="male" required />
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female" />
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="label">Hobbies</span>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="sports" name="hobbies" value="sports" />
+                            <label for="sports">Sports</label>
+                            <input type="checkbox" id="music" name="hobbies" value="music" />
+                            <label for="music">Music</label>
+                            <input type="checkbox" id="reading" name="hobbies" value="reading" />
+                            <label for="reading">Reading</label>
+                            <input type="checkbox" id="travel" name="hobbies" value="travel" />
+                            <label for="travel">Travel</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Any special requests..."></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn">Submit Booking</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sabirin Abdirizak | C1250528</p>
+    </footer>
+</body>
+</html>
